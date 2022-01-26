@@ -1,0 +1,18 @@
+@use '../../scss/' as *;
+
+.header{
+    width: 100%;
+    min-height:$header-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: #fff;
+
+    &__avatar{
+        width: 25%;
+    }
+
+    border-bottom: 1px solid rgb(241, 235, 235);
+    padding: 48px 12px 48px 60px;
+}

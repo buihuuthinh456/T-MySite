@@ -1,0 +1,32 @@
+@use '../../scss/variable' as *;
+.user-container{
+    position: relative;
+    >i{
+        font-size: 2.4rem;
+        margin-right: 12px;
+        transition: color 0.15s ease-in-out;
+    }
+
+    &:hover .btn-logout{
+        display: block;
+    }
+
+    .btn-logout{
+        position: absolute;
+        top:50%;
+        right: 8px;
+        transform:translateY(-50%);
+        font-size: 1.6rem;
+        background-color: $header-color;
+        cursor: pointer;
+        padding: 4px;
+        border-radius: 4px;
+        display: none;
+        color: #fff;
+        &:hover{
+            opacity: 0.8;
+            background-color: rgb(35, 243, 233);
+            color: #000;
+        }
+    }
+}

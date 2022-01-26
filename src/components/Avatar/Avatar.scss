@@ -1,0 +1,13 @@
+@use '../../scss/variable' as *;
+
+.avatar{
+    background-position:center;
+    background-position-y: -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    max-width: 250px;
+    overflow: hidden;
+    padding-top: 100%;
+    // margin-left: 48px;
+}

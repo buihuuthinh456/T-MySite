@@ -1,0 +1,59 @@
+@use '../../scss/variable' as *;
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    padding:24px 48px 24px 60px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex:1;
+    &__title{
+        font-size:2.4rem;
+        color:$header-color;
+        text-align: center;
+    }
+
+    &__description{
+        margin-top: 24px;
+        font-size: 1.8rem;
+        text-align: justify;
+        text-justify: inter-word;
+        text-indent: 12px;
+    }
+
+    &__contact{
+        width: 100%;
+        display: flex;
+        font-size: 2.5rem;
+        margin-top: 36px;
+        align-self: flex-end;
+        justify-self: flex-end;
+        &__item{
+            margin-left: 8px;
+            display: flex;
+            align-items: center;
+            color: $font-color;
+            >a{
+                transition:color .1s linear ;
+                color: inherit;
+            }
+            &:hover{
+                color: $header-color;
+            }
+        }
+
+        &__item:nth-child(1){
+            font-size:1.8rem;
+            flex:1;
+            margin-left: 0;
+            >span:nth-child(3){
+                margin-left: 12px;
+            }
+            >span:nth-child(2n){
+                margin-left: 4px;
+                color:$header-color;
+            }
+        }
+    }
+}

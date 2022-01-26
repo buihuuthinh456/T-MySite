@@ -1,0 +1,48 @@
+@use '../../scss/' as *;
+.navbar-container{
+    width: 25%;
+    min-height: calc(100vh - $header-height);
+    background-color: #fff;
+    border-right: 1px solid hsl(150 15% 85%);
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    padding:12px 24px;
+    &__item{
+        padding: 8px 12px;
+        position: relative;
+        &-container{
+            font-size: 1.8rem;
+            color: $text-color;
+            &:hover{
+                color:$header-color;
+            }
+            >a{
+                color: inherit;
+                display: flex;
+                align-items: center;
+                transition: color 0.15s ease-in-out;
+                >i{
+                    font-size: 2.4rem;
+                    margin-right: 12px;
+                    transition: color 0.15s ease-in-out;
+                }
+            }
+        }
+        &::before{
+            content:"";
+            position: absolute;
+            top:0;
+            left: 0;
+            height: 0;
+            width: 3px;
+            background-color: $header-color;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover::before{
+            height: 100%;
+        }
+    }
+}

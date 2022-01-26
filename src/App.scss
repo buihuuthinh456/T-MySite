@@ -1,0 +1,67 @@
+@use './scss/' as *;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:$font-family;
+}
+.container{
+    max-width: 1280px;
+    margin:0 auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.column-6{
+    width: 50%;
+}
+
+.content{
+    width: 75%;
+    padding: 24px 60px 24px 60px;
+    background-color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.App{
+    position: relative;
+    background-image: url('https://i.pinimg.com/originals/a0/7c/b6/a07cb625b577b00f2868d827a64bd691.jpg');
+}
+
+.notify{
+    position: fixed;
+    top:50px;
+    right: 100px;
+    z-index: 999;
+}
+
+.btn-scrollToTop{
+    position: fixed;
+    top:80vh;
+    right:24px;
+    >i{
+        color: #f1f1f1;
+        font-size: 1.8rem;
+    }
+}
+
+

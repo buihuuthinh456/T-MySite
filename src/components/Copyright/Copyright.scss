@@ -1,0 +1,13 @@
+@use '../../scss/' as *;
+
+.copyright{
+    min-height: $footer-height;
+    border-top: 1px solid hsl(150,50%,70%);
+    background-color: hsl(180,50%,75%);
+    padding:12px 48px;
+    display: flex;
+    justify-content: center;
+    >h3{
+        color:$footer-header-color;
+    }
+}
