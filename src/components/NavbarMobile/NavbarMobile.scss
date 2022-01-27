@@ -1,0 +1,45 @@
+@use '../../scss/' as *;
+
+.navbar-mobile-wrapper{
+    background-color: hsla(200,50%,75%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: $navbar-mobile-height;
+    z-index: 9999;
+    display: none;
+    @include tablet(){
+        display: block;
+        padding: 12px 24px;
+
+    }
+    @include mobile(){
+        padding: 0 24px;
+    }
+}
+
+
+.navbar-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: $navbar-mobile-height;
+    &__logo{
+        >a{
+            color: #000;
+            display: block;
+            padding: 8px;
+            >i{
+            font-size: 2.5rem;
+            }
+        }
+    }
+
+    &__menu{
+        padding: 8px;
+        >i{
+            font-size: 2.5rem;
+        }
+    }
+}

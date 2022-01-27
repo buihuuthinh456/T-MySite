@@ -27,11 +27,25 @@ body{
 .column-6{
     width: 50%;
 }
+.row .column-12-mobile{
+    @include mobile(){
+        width: 100%;
+    }
+}
 
 .content{
     width: 75%;
     padding: 24px 60px 24px 60px;
     background-color: #fff;
+    @include tablet(){
+        width: 100%;
+        padding: 48px;
+    }
+    @include mobile(){
+        width: 100%;
+        padding: 12px;
+    }
+    
 }
 
 ul{
@@ -58,6 +72,9 @@ a{
     position: fixed;
     top:80vh;
     right:24px;
+    @include tablet(){
+        display: none;
+    }
     >i{
         color: #f1f1f1;
         font-size: 1.8rem;

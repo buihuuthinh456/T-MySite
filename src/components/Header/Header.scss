@@ -6,13 +6,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     background-color: #fff;
+    border-bottom: 1px solid rgb(241, 235, 235);
+    padding: 48px 12px 48px 60px;
+
+    @include tablet(){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+        padding-top: calc($navbar-mobile-height + 48px);
+    }
+    @include mobile(){
+        padding-top: calc($navbar-mobile-height + 12px);
+    }
 
     &__avatar{
         width: 25%;
+        @include mobile(){
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
 
-    border-bottom: 1px solid rgb(241, 235, 235);
-    padding: 48px 12px 48px 60px;
+  
 }

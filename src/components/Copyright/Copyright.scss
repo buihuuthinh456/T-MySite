@@ -9,5 +9,8 @@
     justify-content: center;
     >h3{
         color:$footer-header-color;
+        @include mobile(){
+            text-align: center;
+        }
     }
 }

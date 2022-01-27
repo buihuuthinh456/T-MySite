@@ -1,4 +1,4 @@
-@use '../../scss/variable' as *;
+@use '../../scss/' as *;
 
 .avatar{
     background-position:center;
@@ -10,4 +10,8 @@
     overflow: hidden;
     padding-top: 100%;
     // margin-left: 48px;
+
+    @include mobile(){
+        width: 100%;
+    }
 }

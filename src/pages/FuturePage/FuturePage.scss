@@ -1,3 +1,4 @@
+@use '../../scss/' as *;
 .future-description{
     margin-top: 24px;
     &__item{
@@ -7,6 +8,9 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        @include mobile(){
+            padding: 0 12px;
+        }
         .future-description__item__img{
             width: 100%;
             padding-top: 50vh;
@@ -15,6 +19,9 @@
             background-size: cover;
             border-radius: 30px;
             box-shadow: -1px 2px 2px 2px hsl(120 50% 90%);
+            @include tablet(){
+                background-size: contain;
+            }
         }
         >p{
             margin-top: 12px;
@@ -28,6 +35,10 @@
             -webkit-line-clamp: 10;
                     line-clamp: 10;
             -webkit-box-orient: vertical;
+
+            @include mobile(){
+                text-align: center;
+            }
             
         }
     }
@@ -37,4 +48,8 @@
     margin-top: 24px;
     font-size: 1.6rem;
     text-indent: 16px;
+    >p{
+        text-align: justify;
+        line-height: 1.5;
+    }
 }

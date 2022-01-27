@@ -21,10 +21,6 @@ const Homepage = () => {
        
     },[dispatch,dataHome.data.length])
 
-    useEffect(() => {
-        console.log(dataHome);
-    }, [dataHome]);
-
     if(dataHome.isLoading){
         return (
         <Modal>

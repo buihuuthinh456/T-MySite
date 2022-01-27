@@ -118,19 +118,29 @@
             .project-details{
                 display: flex;
                 justify-content: space-between;
+                @include mobile(){
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
                 .project-details__tech{
                     margin-top: 8px;
                     flex: 1;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    justify-content: center;
+                    @include mobile(){
+                        width: 100%;
+                        justify-content: unset;
+                        align-items: unset;
+                    }
                     >h3{
                         font-size: 1.8rem;
                     }
 
                     .project-details__tech__listSkill{
                         margin-top: 4px;
+                        
                         .project-details__tech__listSkill__item{
                             margin-top: 4px;
                             font-size: 1.6rem;

@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Copyright from './components/Copyright/Copyright';
 import Navbar from './components/Navbar/Navbar';
+import NavbarMobile from './components/NavbarMobile/NavbarMobile';
 
 import Button from './components/Button/Button';
 import Notify from './components/Notify/Notify';
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <NavbarMobile />
         <Header/>
         <div className="row">
           <Navbar/>
